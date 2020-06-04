@@ -5,9 +5,9 @@
 var table = document.getElementById('cart');
 table.addEventListener('click', removeItemFromCart);
 var cart;
-
+var counter=0;
 function loadCart() {
-  var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+  var cartItems = JSON.parse(localStorage.getItem(`Cart ${counter++}`)) || [];
   cart = new Cart(cartItems);
 }
 
