@@ -61,7 +61,7 @@ function addSelectedItemToCart() {
 // TODO: Update the cart count in the header nav with the number of items in the Cart
 function updateCounter() {
   var spanElement = document.getElementById('itemCount');
-  spanElement.textContent = Cart.all.length;
+  spanElement.value = Cart.all.length;
 
 }
 
@@ -82,25 +82,7 @@ function updateCartPreview() {
   cartContentsItem.textContent = `Item: ${selectedProductName}, Quantity: ${quantityOfProduct}`
   console.log("Hello World"+cartContentsItem)
   
-  // var cart_table = document.getElementById('cart');
-  // var cart_table = document.getElementsByTagName('tbody');
-
-  // for (var i in Cart.all) {
-  //   var tableRow = document.createElement('tr');
-  //   var tableData = document.createElement('td');
-
-  //   // cartContentsDiv.getElementsByTagName('tbody').appendChild(tableData) ;
-
-
-  //   tableData.innerHTML = ' <span class="close">x</span>';
-  //   tableRow.appendChild(tableData);
-  //   tableData.textContent = quantityOfProduct;
-  //   tableRow.appendChild(tableData);
-  //   tableData.textContent = selectedProductName;
-  //   tableRow.appendChild(tableData);
-  //   cart_table.appendChild(tableRow);
-  // }
-
+  
 }
 
 // Set up the "submit" event listener on the form.
